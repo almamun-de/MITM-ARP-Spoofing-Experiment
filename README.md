@@ -40,19 +40,5 @@ This project documents a man-in-the-middle (MITM) attack using ARP spoofing, whe
     - Sent an ARP reply to Alice using Bob's IP address but Mallory's MAC address to ensure Mallory's MAC was stored in Alice's ARP cache.
     - Created a fake ARP reply hex file (payload) to maintain the MITM position even under IDS monitoring.
 
-## Tools and Commands Used
-- **`tcpdump`**: Used for capturing and analyzing network traffic.
-- **`arp`**: Used to inspect and manipulate ARP tables.
-- **`raw_packet`**: A custom C program used for crafting and sending raw Ethernet packets.
-- **`ifconfig`**: Used to configure network interfaces.
 
-## Results
-- **Secret Obtained**: Successfully intercepted the secret shared by Alice with Bob.
-- **Bonus Part**: Explored methods to maintain a MITM position despite the presence of an IDS.
-
-## Conclusion
-The task successfully demonstrated how ARP spoofing can be used to intercept and analyze communications in a switched Ethernet network. It also highlighted potential countermeasures, such as IDS, and the importance of securing ARP communications.
-
-## Acknowledgments
-This project was completed as part of a cybersecurity exercise in an educational setting.
 
